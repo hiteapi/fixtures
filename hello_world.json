@@ -1,0 +1,100 @@
+{
+  "self": {
+    "method": "GET",
+    "uri": "http://examples.hiteapi.org/greetings/1"
+  },
+  "label": "Hello, world!",
+  "options": {
+    "self": {      
+      "method": "OPTIONS",
+      "uri": "http://examples.hiteapi.org/greetings/1"
+    },
+    "label": "How are you?",
+    "requests": [
+      {
+	"method": "POST",
+	"uri": "http://examples.hiteapi.org/replies",
+	"label": "Reply",
+	"body": [
+	  {
+	    "greetings": "1"
+	  },
+	  {
+	    "self": {
+	      "method": "GET",
+	      "uri": "http://examples.hiteapi.org/salutations"
+	    },
+	    "label": "Salutations",
+	    "key": "salutations",
+	    "type": "choices",
+	    "minimum_allowed": 1,
+	    "maximum_allowed": 1,
+	    "choices": [
+	      {
+		"self": {
+		  "method": "GET",
+		  "uri": "http://examples.hiteapi.org/salutations/1"
+		},
+		"value": "1",
+		"label": "Hello."
+	      },
+	      {	
+		"self": {
+		  "method": "GET",
+		  "uri": "http://examples.hiteapi.org/salutations/2"
+		},
+		"value": "2",
+		"label": "Hi there."
+	      },
+	      {
+		"self": {
+		  "method": "GET",
+		  "uri": "http://examples.hiteapi.org/salutations/3"
+		},
+		"value": "3",
+		"label": "Good to see you." 
+	      }
+	    ]
+	  },
+	  {
+	    "self": {
+	      "method": "GET",
+	      "uri": "http://examples.hiteapi.org/updates"
+	    },
+	    "label": "Updates",
+	    "key": "updates",
+	    "type": "choices",
+	    "minimum_allowed": 1,
+	    "maximum_allowed": 3,
+	    "choices": [
+	      {
+		"self": {
+		  "method": "GET",
+		  "uri": "http://examples.hiteapi.org/updates/1"
+		},
+		"value": "1",
+		"label": "We are rotating and revolving."
+	      },
+	      {
+		"self": {
+		  "method": "GET",
+		  "uri": "http://examples.hiteapi.org/updates/2"
+		},
+		"value": "2",
+		"label": "We are about half sunlight and half darkness."
+	      },
+	      {
+		"self": {
+		  "method": "GET",
+		  "uri": "http://examples.hiteapi.org/updates/3"
+		},
+		"value": "3",
+		"label": "We are mostly soaking wet."
+	      }
+	    ]
+	  }
+	]
+      }
+    ]
+  }
+}
