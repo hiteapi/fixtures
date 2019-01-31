@@ -3,6 +3,6 @@ before_install:
 language: node_js
 deploy:
   provider: script
-  script: bash scripts/webhook.sh
+  script: bash .scripts/webhook.sh
   on:
     branch: master
