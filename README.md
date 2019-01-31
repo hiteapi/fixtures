@@ -1,2 +1,2 @@
 # fixtures
-Test fixtures
+Test fixtures for HITE API
