@@ -3,7 +3,7 @@
     "method": "GET",
     "uri": "http://examples.hiteapi.org/greetings/1"
   },
-  "label": "Hello, world! Break it.",
+  "label": "Hello, world! Break it. With Merge.",
   "options": {
     "self": {      
       "method": "OPTIONS",
