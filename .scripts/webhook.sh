@@ -3,7 +3,7 @@ body='{
 "branch":"master"
 }}'
 
-repositories=(nodejs react)
+repositories=(react nodejs nodejs_restify)
 
 for i in "${repositories[@]}"
 do
