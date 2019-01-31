@@ -3,7 +3,7 @@ body='{
 "branch":"master"
 }}'
 
-repositories=(react nodejs nodejs_restify)
+repositories=(react nodejs nodejs_restify ruby_sinatra)
 
 for i in "${repositories[@]}"
 do
