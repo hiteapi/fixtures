@@ -1,8 +1,5 @@
-branches:
-only:
-- master
-os:
-- linux
-sudo: false
-script:
-- "/bin/bash ./scripts/webhook.sh"
+deploy:
+  provider: script
+  script: bash scripts/webhook.sh
+  on:
+    branch: master
